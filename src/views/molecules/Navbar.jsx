@@ -50,16 +50,6 @@ export function StickyNavbar() {
           Position
         </Typography>
       </Link>
-      <Link to="/train">
-        <Typography
-          as="li"
-          variant="small"
-          color="blue-gray"
-          className="p-1 font-normal"
-        >
-          Training
-        </Typography>
-      </Link>
     </ul>
   );
 

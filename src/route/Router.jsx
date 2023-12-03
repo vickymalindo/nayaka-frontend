@@ -6,7 +6,6 @@ import Departement from '../pages/departement/Departement';
 import AddDepartement from '../pages/departement/AddDepartement';
 import EditDepartement from '../pages/departement/EditDepartement';
 import Position from '../pages/position/Position';
-import Train from '../pages/train/Train';
 
 export const Router = createBrowserRouter([
   {
@@ -45,8 +44,4 @@ export const Router = createBrowserRouter([
   //   path: '/edit_position/:id',
   //   element: <EditPosition />,
   // },
-  {
-    path: '/train',
-    element: <Train />,
-  },
 ]);
