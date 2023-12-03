@@ -67,11 +67,20 @@ export function EmployeeTable() {
             </tr>
           </thead>
           <tbody>
-            {datas.map((val) => {
+            {datas.map((val, index) => {
               const newBirthdate = val.birthdate.slice(0, 10);
               const newEmployedDate = val.employed_date.slice(0, 10);
               return (
                 <tr key={val.id} className="even:bg-blue-gray-50/50">
+                  <td className="p-4">
+                    <Typography
+                      variant="small"
+                      color="blue-gray"
+                      className="font-normal"
+                    >
+                      {index + 1}
+                    </Typography>
+                  </td>
                   <td className="p-4">
                     <Typography
                       variant="small"
