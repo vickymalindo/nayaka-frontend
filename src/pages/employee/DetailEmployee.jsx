@@ -30,7 +30,6 @@ const DetailEmployee = () => {
       );
       const { data: dataEmployee } = resEmployee;
       const employee = dataEmployee.payload.data[0];
-      console.log(employee);
 
       setFirstname(employee.firstname);
       setMiddlename(employee.middlename);
