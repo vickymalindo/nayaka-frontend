@@ -1,8 +1,8 @@
-import React from 'react';
-import { StickyNavbar } from '../../views/molecules/Navbar';
 import { Button, Card, Typography } from '@material-tailwind/react';
-import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { StickyNavbar } from '../../views/molecules/Navbar';
 
 const DetailEmployee = () => {
   const [firstname, setFirstname] = React.useState('');
@@ -54,29 +54,29 @@ const DetailEmployee = () => {
   return (
     <div>
       <StickyNavbar />
-      <section className="px-11 py-2 mt-12">
-        <Typography variant="h4" color="blue-gray">
+      <section className='px-11 py-2 mt-12'>
+        <Typography variant='h4' color='blue-gray'>
           Detail Employee
         </Typography>
-        <Card className="p-4 w-max mx-auto">
-          <div className="flex gap-4 flex-col">
+        <Card className='p-4 w-max mx-auto'>
+          <div className='flex gap-4 flex-col'>
             <img
               src={`https://randomuser.me/api/portraits/${
                 sex === 'M' ? 'men' : 'women'
               }/${id}.jpg`}
-              alt="person"
-              className="h-96 rounded-lg object-contain object-center mb-4"
+              alt='person'
+              className='h-96 rounded-lg object-contain object-center mb-4'
             />
             <div>
-              <Typography className="text-xl text-black font-bold text-center sm:text-start">{`${firstname} ${middlename} ${lastname}`}</Typography>
-              <Typography className="text-base text-slate font-semibold text-center sm:text-start">
+              <Typography className='text-xl text-black font-bold text-center sm:text-start'>{`${firstname} ${middlename} ${lastname}`}</Typography>
+              <Typography className='text-base text-slate font-semibold text-center sm:text-start'>
                 {strDeptId}
               </Typography>
-              <Typography className="text-lg text-slate text-center sm:text-start">
+              <Typography className='text-lg text-slate text-center sm:text-start'>
                 {strPostId}
               </Typography>
 
-              <div className="mt-4 border-b-2 pb-2">
+              <div className='mt-4 border-b-2 pb-2'>
                 <Typography>Salary Range: {salaryRange}</Typography>
                 <Typography>Annual Income: {strAnnualIncome}</Typography>
                 <Typography>Loans: {strLoans}</Typography>
@@ -90,31 +90,30 @@ const DetailEmployee = () => {
               </div>
             </div>
             <div>
-              <Typography className="mb-4">
+              <Typography className='mb-4'>
                 Skills :{' '}
                 {skills.split(',').map((val, index) => {
                   return (
                     <Button
                       key={index}
-                      size="sm"
-                      className="mr-2"
-                      color="yellow"
-                      disabled
-                    >
+                      size='sm'
+                      className='mr-2'
+                      color='yellow'
+                      disabled>
                       {val}
                     </Button>
                   );
                 })}
               </Typography>
-              <Typography className="mb-4">
+              <Typography className='mb-4'>
                 Trainer :{' '}
-                <Button size="sm" color="red" disabled>
+                <Button size='sm' color='red' disabled>
                   {trainer}
                 </Button>
               </Typography>
               <Typography>
                 Project :{' '}
-                <Button size="sm" color="green" disabled>
+                <Button size='sm' color='green' disabled>
                   {project}
                 </Button>
               </Typography>

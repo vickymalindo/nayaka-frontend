@@ -14,3 +14,5 @@ export const tableHeadEmployee = [
 export const tableHeadDepartement = ['No', 'Departement Name', 'Action'];
 
 export const tableHeadPosition = ['No', 'Position Name', 'Action'];
+
+export const tableHeadKaryawan = ['No', 'NIK', 'Nama', 'Alamat'];

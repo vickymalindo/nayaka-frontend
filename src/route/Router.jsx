@@ -1,14 +1,19 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Employee from '../pages/employee/Employee';
-import AddEmployee from '../pages/employee/AddEmployee';
-import EditEmployee from '../pages/employee/EditEmployee';
-import Departement from '../pages/departement/Departement';
 import AddDepartement from '../pages/departement/AddDepartement';
+import Departement from '../pages/departement/Departement';
 import EditDepartement from '../pages/departement/EditDepartement';
-import Position from '../pages/position/Position';
+import AddEmployee from '../pages/employee/AddEmployee';
 import DetailEmployee from '../pages/employee/DetailEmployee';
+import EditEmployee from '../pages/employee/EditEmployee';
+import Employee from '../pages/employee/Employee';
+import Karyawan from '../pages/karyawan/Karyawan';
+import Position from '../pages/position/Position';
 
 export const Router = createBrowserRouter([
+  {
+    path: '/karyawan',
+    element: <Karyawan />,
+  },
   {
     path: '/',
     element: <Employee />,
