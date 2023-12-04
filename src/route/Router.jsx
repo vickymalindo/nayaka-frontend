@@ -6,6 +6,7 @@ import Departement from '../pages/departement/Departement';
 import AddDepartement from '../pages/departement/AddDepartement';
 import EditDepartement from '../pages/departement/EditDepartement';
 import Position from '../pages/position/Position';
+import DetailEmployee from '../pages/employee/DetailEmployee';
 
 export const Router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ export const Router = createBrowserRouter([
   {
     path: '/edit_employee/:id',
     element: <EditEmployee />,
+  },
+  {
+    path: '/detail_employee/:id',
+    element: <DetailEmployee />,
   },
   {
     path: '/departement',

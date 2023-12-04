@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export function EmployeeTable() {
+export function EmployeeTable({ onClick }) {
   const [datas, setDatas] = React.useState([]);
   const navigate = useNavigate();
 
@@ -154,7 +154,7 @@ export function EmployeeTable() {
                     </Typography>
                   </td>
                   <td className="p-4 flex justify-between items-center flex-col lg:flex-row">
-                    <Link>
+                    <Link to={`/detail_employee/${val.id}`}>
                       <FaRegEye className="text-base inline-block my-1 lg:my-0" />
                     </Link>
                     <Link to={`/edit_employee/${val.id}`}>
